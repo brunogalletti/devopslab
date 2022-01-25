@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 from app import app
 import unittest
+from flask_wtf.csrf import CSRFProtect
 
 class Test(unittest.TestCase):
     def setUp(self):
