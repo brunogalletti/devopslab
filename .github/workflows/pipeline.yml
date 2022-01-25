@@ -40,8 +40,8 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Needed to get PR information, if any
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
 
-      - name: Install Requirements
-        run:  pip install flask pytest flask-wtf
+#      - name: Install Requirements
+#        run:  pip install flask pytest flask-wtf
 
   Deploy:
     needs: [Build,SonarCloud]
