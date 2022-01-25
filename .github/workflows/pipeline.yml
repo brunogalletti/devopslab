@@ -21,13 +21,12 @@ jobs:
 
       - name: Install Requirements
         run:  pip install flask
+        run:  pip install flask pytest flask-wtf
 
       - name: Unit Test
         run: python -m unittest -v test
 
-      - name: Install Requirements
-        run:  pip install flask pytest flask-wtf
-
+        
   SonarCloud:
     name: SonarCloud
     runs-on: ubuntu-latest
