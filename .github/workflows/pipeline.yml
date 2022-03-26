@@ -26,6 +26,9 @@ jobs:
       - name: Install Requirements wtf
         run:  pip install flask pytest flask-wtf  
 
+      - name: Install Requirements Code Coverage
+        run:  pip install pytest-cov
+
       - name: Unit Test
         run: python -m unittest -v test
 
